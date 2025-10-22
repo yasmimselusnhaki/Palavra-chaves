@@ -8,7 +8,7 @@ function mostraPalavrasChave() {
    const palavrasChaves = processaTexto("texto");
 
 
-  campoResultado.textContent = palavrasChave.join(', ');
+  campoResultado.textContent = palavrasChaves.join(', ');
 
 function processaTexto(texto){
     let palavras = texto.split(/\P{L}+/u);
