@@ -2,13 +2,14 @@ const botaoMostraPalavras = document.querySelector("#botao-palavrachave");
 
 botaoMostraPalavras.addEventListener("click", mostraPalavrasChave); 
 
-function mostraPalavrasChaves() { 
+function mostraPalavrasChave() { 
   const texto = document.querySelector('#entrada-de-texto').value;
   const campoResultado = document.querySelector('#resultado-palavrachave');
-   const palavrasChaves = processaTexto("texto");
+   const palavrasChave = processaTexto("texto");
 
 
-  campoResultado.textContent = palavrasChaves.join(', ');
+  campoResultado.textContent = palavrasChave.join(', ');
+}
 
 function processaTexto(texto){
     let palavras = texto.split(/\P{L}+/u);
@@ -27,4 +28,3 @@ function processaTexto(texto){
     
     return palavras;
 }
-} 
