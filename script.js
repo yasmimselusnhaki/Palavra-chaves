@@ -8,7 +8,7 @@ function mostraPalavrasChave() {
    const palavrasChave = processaTexto("texto");
 
 
-  campoResultado.textContent = palavrasChave.join(', ');
+  campoResultado.textContent = palavrasChave.join(",");
 }
 
 function processaTexto(texto){
