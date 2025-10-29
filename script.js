@@ -22,7 +22,7 @@ function processaTexto(texto){
 
 
     console.log(ordenadas);
-     return ordenadas.slice(0,10);
+     return palavras.slice(0,10);
 }
 
 function contaFrequencias(palavras){
